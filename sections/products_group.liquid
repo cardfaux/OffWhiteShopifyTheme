@@ -1,0 +1,55 @@
+{%- assign collection = collections[section.settings.collection] -%}
+
+<section id="products-group">
+  <h2>{{ collection.title }}</h2>
+  <div class="container">
+    <div class="row">
+    {% for product in collection.products limit: section.settings.max_products %}
+      <div class="col-md-6 col-lg-3">
+        <a href="#" class="product-bg">
+          <img src="{{ product.featured_image | img_url: '350x' }}" class="product-img">
+
+          <div class="overlay"
+            style="background: {{ section.settings.product_info_bg_color }};
+          ">
+            <span class="product-title">{{ product.title }}</span>
+            <span class="product-price">{{ product.price | money_with_currency }}</span>
+          </div>
+        </a>
+      </div>
+     {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Products Group",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection On Sale",
+      "info": "choose a collection That is on Sale"
+    },
+    {
+      "type": "text",
+      "id": "max_products",
+      "default": "4",
+      "label": "Maximum Amount Of Products"
+    },
+    {
+      "type": "color",
+      "id": "product_info_bg_color",
+      "label": "Product Hover BG",
+      "default": "rgba(0, 0, 0, 1)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products Group",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}
