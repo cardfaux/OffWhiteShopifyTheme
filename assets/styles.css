@@ -109,7 +109,7 @@ header .menu .dropdown .sub-menu a {
   display: block;
   padding: 10px;
 }
-#jumbo {
+.jumbo-section {
   background: black;
   height: 100vh;
   width: 100%;
@@ -117,7 +117,7 @@ header .menu .dropdown .sub-menu a {
   margin-bottom: 25px;
   overflow: hidden;
 }
-#jumbo .bg-image {
+.jumbo-section .bg-image {
   background: url("jumbobg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -128,7 +128,7 @@ header .menu .dropdown .sub-menu a {
   z-index: 1;
   top: 0;
 }
-#jumbo .bg-video {
+.jumbo-section .bg-video {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -136,7 +136,7 @@ header .menu .dropdown .sub-menu a {
   top: 0;
   transform: scale(1.5);
 }
-#jumbo .transparent-color {
+.jumbo-section .transparent-color {
   background: rgba(66, 53, 88, 0.8);
   height: 100vh;
   width: 100%;
@@ -144,7 +144,7 @@ header .menu .dropdown .sub-menu a {
   z-index: 2;
   top: 0;
 }
-#jumbo .titles {
+.jumbo-section .titles {
   position: absolute;
   z-index: 3;
   display: flex;
@@ -152,21 +152,21 @@ header .menu .dropdown .sub-menu a {
   height: 100vh;
   justify-content: center;
 }
-#jumbo .titles h1 {
+.jumbo-section .titles h1 {
   font-size: 7rem;
   color: #ffff00;
   font-weight: 900;
   text-transform: uppercase;
   transform: translate3d(100px, 0, 0);
 }
-#jumbo .titles h2 {
+.jumbo-section .titles h2 {
   font-size: 5rem;
   color: white;
   font-weight: 200;
   text-transform: uppercase;
   transform: translate3d(135px, 0, 0);
 }
-#jumbo .state {
+.jumbo-section .state {
   background: white;
   position: absolute;
   height: 12%;
@@ -177,11 +177,11 @@ header .menu .dropdown .sub-menu a {
   /* justify-content: center; */
   align-items: center;
 }
-#jumbo .state .number {
+.jumbo-section .state .number {
   font-size: 5rem;
   transform: translate3d(50px, 0, 0);
 }
-#jumbo .store-info {
+.jumbo-section .store-info {
   background: #0cdbdd;
   position: absolute;
   height: 20%;
@@ -192,12 +192,12 @@ header .menu .dropdown .sub-menu a {
   display: flex;
 }
 
-#jumbo .store-info a {
+.jumbo-section .store-info a {
   width: 25%;
   display: inline-block;
 }
 
-#jumbo .store-info img {
+.jumbo-section .store-info img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -205,33 +205,33 @@ header .menu .dropdown .sub-menu a {
   filter: saturate(0);
   transition: all 0.4s ease-in-out;
 }
-#jumbo .store-info img:hover {
+.jumbo-section .store-info img:hover {
   height: 100%;
   object-fit: cover;
   cursor: pointer;
   filter: saturate(100%);
 }
 
-#twoCollections {
+.twoCollections-section {
   margin-bottom: 25px;
   overflow: hidden;
 }
-#twoCollections .left-c .left-c-img {
+.twoCollections-section .left-c .left-c-img {
   width: 100%;
   position: relative;
 }
-#twoCollections .left-c .left-c-img .overlay {
+.twoCollections-section .left-c .left-c-img .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-#twoCollections .left-c .left-c-img img {
+.twoCollections-section .left-c .left-c-img img {
   width: 100%;
   height: 500px;
   object-fit: cover;
   object-position: center;
 }
-#twoCollections .left-c .collection-title {
+.twoCollections-section .left-c .collection-title {
   display: flex;
   height: 100%;
   width: 100%;
@@ -246,28 +246,33 @@ header .menu .dropdown .sub-menu a {
   font-weight: 900;
   text-transform: uppercase;
 }
-#twoCollections .left-c .collection-title span {
+.twoCollections-section .left-c .collection-title span {
   line-height: 1;
   transform: translate3d(-25px, 50px, 0);
 }
 
-#twoCollections .right-c .right-c-bg {
+.twoCollections-section .right-c .right-c-bg {
   background: #dddfe4;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#twoCollections .right-c .right-c-bg .right-c-img {
+.twoCollections-section .right-c .right-c-bg .right-c-img {
   height: 300px;
   width: 300px;
 }
-#twoCollections .right-c .right-c-bg .right-c-img img {
+.twoCollections-section .right-c .right-c-bg .right-c-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-#twoCollections .right-c .right-c-bg .right-c-img .collection-title span {
+.twoCollections-section
+  .right-c
+  .right-c-bg
+  .right-c-img
+  .collection-title
+  span {
   font-size: 3.5rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -276,7 +281,7 @@ header .menu .dropdown .sub-menu a {
   display: block;
 }
 
-#horizontal-sale .overlay {
+.horizontal-sale-section .overlay {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
@@ -286,13 +291,13 @@ header .menu .dropdown .sub-menu a {
   align-items: center;
 }
 
-#horizontal-sale .overlay .percent-number {
+.horizontal-sale-section .overlay .percent-number {
   color: white;
   font-size: 20rem;
   font-weight: 900;
   line-height: 1;
 }
-#horizontal-sale .overlay .title {
+.horizontal-sale-section .overlay .title {
   color: white;
   font-size: 3rem;
   font-weight: 900;
@@ -300,7 +305,7 @@ header .menu .dropdown .sub-menu a {
   letter-spacing: 20px;
   margin-bottom: 1rem;
 }
-#horizontal-sale .overlay a {
+.horizontal-sale-section .overlay a {
   display: block;
   color: white;
   font-size: 1.2rem;
@@ -312,26 +317,26 @@ header .menu .dropdown .sub-menu a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-#horizontal-sale .overlay a:hover {
+.horizontal-sale-section .overlay a:hover {
   color: black;
   background: #ffff00;
 }
 
-#products-group {
+.products-group-section {
   padding: 50px 0 0 0;
   overflow: hidden;
 }
-#products-group div[class*="col"] {
+.products-group-section div[class*="col"] {
   margin-bottom: 50px;
 }
-#products-group h2 {
+.products-group-section h2 {
   font-size: 2rem;
   text-align: center;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
-#products-group .product-bg {
+.products-group-section .product-bg {
   background: white;
   height: 100%;
   min-height: 300px;
@@ -343,10 +348,10 @@ header .menu .dropdown .sub-menu a {
   margin-bottom: 50px;
 }
 
-#products-group .product-bg .product-img {
+.products-group-section .product-bg .product-img {
   width: 80%;
 }
-#products-group .product-bg .overlay {
+.products-group-section .product-bg .overlay {
   background: #1b1b1b;
   position: absolute;
   height: 100%;
@@ -360,16 +365,16 @@ header .menu .dropdown .sub-menu a {
   cursor: pointer;
   color: #ffff00;
 }
-#products-group .product-bg .overlay:hover {
+.products-group-section .product-bg .overlay:hover {
   opacity: 1;
 }
 
-#products-group .product-bg .overlay .product-title {
+.products-group-section .product-bg .overlay .product-title {
   font-weight: 600;
   text-align: center;
   font-size: 1.3rem;
 }
-#products-group .product-bg .overlay .product-price {
+.products-group-section .product-bg .overlay .product-price {
   font-weight: 600;
 }
 
@@ -492,13 +497,18 @@ footer .address {
   /* body {
     background-color: red;
   } */
-  #twoCollections .left-c .collection-title span {
+  .twoCollections-section .left-c .collection-title span {
     font-size: 2.8rem;
   }
-  #twoCollections .right-c .right-c-bg .right-c-img .collection-title span {
+  .twoCollections-section
+    .right-c
+    .right-c-bg
+    .right-c-img
+    .collection-title
+    span {
     font-size: 2.8rem;
   }
-  #horizontal-sale .overlay .percent-number {
+  .horizontal-sale-section .overlay .percent-number {
     font-size: 12rem;
   }
 }
@@ -508,22 +518,27 @@ footer .address {
   /* body {
     background-color: yellow;
   } */
-  #jumbo .titles h1 {
+  .jumbo-section .titles h1 {
     font-size: 4rem;
   }
-  #jumbo .titles h2 {
+  .jumbo-section .titles h2 {
     font-size: 2.7rem;
   }
-  #jumbo .state .number {
+  .jumbo-section .state .number {
     font-size: 3rem;
   }
-  #twoCollections .left-c .collection-title span {
+  .twoCollections-section .left-c .collection-title span {
     font-size: 2.8rem;
   }
-  #twoCollections .right-c .right-c-bg .right-c-img .collection-title span {
+  .twoCollections-section
+    .right-c
+    .right-c-bg
+    .right-c-img
+    .collection-title
+    span {
     font-size: 2.8rem;
   }
-  #horizontal-sale .overlay .percent-number {
+  .horizontal-sale-section .overlay .percent-number {
     font-size: 12rem;
   }
 }
@@ -533,22 +548,27 @@ footer .address {
   /* body {
     background-color: purple;
   } */
-  #jumbo .titles h1 {
+  .jumbo-section .titles h1 {
     font-size: 4rem;
   }
-  #jumbo .titles h2 {
+  .jumbo-section .titles h2 {
     font-size: 2.7rem;
   }
-  #jumbo .state .number {
+  .jumbo-section .state .number {
     font-size: 2rem;
   }
-  #twoCollections .left-c .collection-title span {
+  .twoCollections-section .left-c .collection-title span {
     font-size: 2.8rem;
   }
-  #twoCollections .right-c .right-c-bg .right-c-img .collection-title span {
+  .twoCollections-section
+    .right-c
+    .right-c-bg
+    .right-c-img
+    .collection-title
+    span {
     font-size: 2.8rem;
   }
-  #horizontal-sale .overlay .percent-number {
+  .horizontal-sale-section .overlay .percent-number {
     font-size: 12rem;
   }
 }
