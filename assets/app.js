@@ -1,4 +1,5 @@
 let homeController = new ScrollMagic.Controller();
+let homeActive = document.querySelector(".template-index");
 
 // HEADER ANIMATIONS START
 let headerNodes = document.querySelectorAll("header");
@@ -29,10 +30,13 @@ if (headerNodes != null) {
         ">-0.4"
       );
     let headerScene = new ScrollMagic.Scene({
-      triggerElement: ".jumbo-section",
-      triggerHook: 0.8,
+      triggerElement: "body",
+      triggerHook: 0,
       reverse: true,
-      offset: document.querySelector(".jumbo-section").offsetHeight + 100,
+      offset:
+        homeActive != null
+          ? document.querySelector("header").offsetHeight + 100
+          : 0,
       duration: 0,
     })
       .setTween(headerTL)
