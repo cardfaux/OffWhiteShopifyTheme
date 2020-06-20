@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Debut",
-    "theme_author": "Shopify",
-    "theme_version": "16.5.6",
-    "theme_documentation_url": "https://help.shopify.com/manual/using-themes/themes-by-shopify/debut",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_name": "Final Theme",
+    "theme_author": "James Hagood",
+    "theme_version": "0.0.1",
+    "theme_documentation_url": "https://jameshagood.dev",
+    "theme_support_url": "https://jameshagood.dev/contact-james-hagood/"
   },
   {
     "name": {
@@ -29,6 +29,38 @@
       "zh-TW": "色彩"
     },
     "settings": [
+      {
+        "type": "header",
+        "content": "Header and Mobile Menu"
+      },
+      {
+        "type": "color",
+        "id": "header_logo_color",
+        "label": "Color of Logo Font",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "header_menu_links",
+        "label": "Color of Menu Links",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "header_bg_color",
+        "label": "Header and Mobile Menu Background",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "Theme Main Colors"
+      },
+      {
+        "type": "color",
+        "id": "highlight_color",
+        "label": "Highlight Color",
+        "default": "#FFFF00"
+      },
       {
         "type": "header",
         "content": {

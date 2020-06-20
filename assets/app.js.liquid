@@ -11,10 +11,10 @@ if (headerNodes != null) {
       .fromTo(
         node,
         {
-          backgroundColor: "rgba(0, 0, 0, 0)",
+          backgroundColor: "{{ settings.header_bg_color | color_modify: 'alpha', 0 }}",
         },
         {
-          backgroundColor: "rgba(0, 0, 0, 1)",
+          backgroundColor: "{{ settings.header_bg_color | color_modify: 'alpha', 1 }}",
           duration: 0.4,
         }
       )
