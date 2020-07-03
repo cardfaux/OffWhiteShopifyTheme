@@ -1,9 +1,15 @@
 [
   {
     "name": "theme_info",
+<<<<<<< HEAD
     "theme_name": "JamesHagood",
     "theme_author": "James Hagood",
     "theme_version": "1.0.0",
+=======
+    "theme_name": "Final Theme",
+    "theme_author": "James Hagood",
+    "theme_version": "0.0.1",
+>>>>>>> 9b874bc7ab913fc80c5175e656b646fe1fe80566
     "theme_documentation_url": "https://jameshagood.dev",
     "theme_support_url": "https://jameshagood.dev/contact-james-hagood/"
   },
@@ -36,19 +42,31 @@
       {
         "type": "color",
         "id": "header_logo_color",
+<<<<<<< HEAD
         "label": "Logo Font",
+=======
+        "label": "Color of Logo Font",
+>>>>>>> 9b874bc7ab913fc80c5175e656b646fe1fe80566
         "default": "#FFFFFF"
       },
       {
         "type": "color",
         "id": "header_menu_links",
+<<<<<<< HEAD
         "label": "Menu Links",
+=======
+        "label": "Color of Menu Links",
+>>>>>>> 9b874bc7ab913fc80c5175e656b646fe1fe80566
         "default": "#FFFFFF"
       },
       {
         "type": "color",
         "id": "header_bg_color",
+<<<<<<< HEAD
         "label": "Header and Mobile Menu Background ",
+=======
+        "label": "Header and Mobile Menu Background",
+>>>>>>> 9b874bc7ab913fc80c5175e656b646fe1fe80566
         "default": "#000000"
       },
       {
@@ -59,7 +77,11 @@
         "type": "color",
         "id": "highlight_color",
         "label": "Highlight Color",
+<<<<<<< HEAD
         "default": "#ffff00"
+=======
+        "default": "#FFFF00"
+>>>>>>> 9b874bc7ab913fc80c5175e656b646fe1fe80566
       },
       {
         "type": "header",
