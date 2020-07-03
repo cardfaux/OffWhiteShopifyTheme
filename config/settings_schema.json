@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Debut",
-    "theme_author": "Shopify",
-    "theme_version": "16.5.6",
-    "theme_documentation_url": "https://help.shopify.com/manual/using-themes/themes-by-shopify/debut",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_name": "JamesHagood",
+    "theme_author": "James Hagood",
+    "theme_version": "1.0.0",
+    "theme_documentation_url": "https://jameshagood.dev",
+    "theme_support_url": "https://jameshagood.dev/contact-james-hagood/"
   },
   {
     "name": {
@@ -29,6 +29,38 @@
       "zh-TW": "色彩"
     },
     "settings": [
+      {
+        "type": "header",
+        "content": "Header and Mobile Menu"
+      },
+      {
+        "type": "color",
+        "id": "header_logo_color",
+        "label": "Logo Font",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "header_menu_links",
+        "label": "Menu Links",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "header_bg_color",
+        "label": "Header and Mobile Menu Background ",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "Theme Main Colors"
+      },
+      {
+        "type": "color",
+        "id": "highlight_color",
+        "label": "Highlight Color",
+        "default": "#ffff00"
+      },
       {
         "type": "header",
         "content": {
@@ -75,7 +107,7 @@
           "zh-CN": "标题和链接",
           "zh-TW": "標題和連結"
         },
-        "default": "#3a3a3a"
+        "default": "#1b1b1b"
       },
       {
         "type": "color",
@@ -100,7 +132,7 @@
           "zh-CN": "正文文本",
           "zh-TW": "內文"
         },
-        "default": "#333232"
+        "default": "#1b1b1b"
       },
       {
         "type": "color",
@@ -587,7 +619,7 @@
           "zh-CN": "字体",
           "zh-TW": "字型"
         },
-        "default": "helvetica_n7"
+        "default": "bembo_book_n4"
       },
       {
         "type": "range",
@@ -664,7 +696,7 @@
           "zh-CN": "字体",
           "zh-TW": "字型"
         },
-        "default": "helvetica_n4"
+        "default": "abel_n4"
       },
       {
         "type": "range",
@@ -694,6 +726,35 @@
         "max": 20,
         "step": 1,
         "unit": "px"
+      },
+      {
+        "type": "header",
+        "content": "Horizontal Section Title"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_section_horizontal_sale_font",
+        "label": {
+          "da": "Skrifttype",
+          "de": "Schriftart",
+          "en": "Font",
+          "es": "Fuente",
+          "fi": "Fontti",
+          "fr": "Police",
+          "hi": "फ़ॉन्ट",
+          "it": "Font",
+          "ja": "フォント",
+          "ko": "글꼴",
+          "nb": "Skrifttype",
+          "nl": "Lettertype",
+          "pt-BR": "Fonte",
+          "pt-PT": "Tipo de letra",
+          "sv": "Typsnitt",
+          "th": "แบบอักษร",
+          "zh-CN": "字体",
+          "zh-TW": "字型"
+        },
+        "default": "avenir_next_n7"
       }
     ]
   },

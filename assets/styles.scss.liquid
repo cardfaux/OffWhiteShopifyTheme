@@ -1,4 +1,12 @@
 @import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap";
+
+{% assign header_font = settings.type_header_font %}
+{% assign base_font = settings.type_base_font %}
+{% assign horizontal_sale_font = settings.type_section_horizontal_sale_font %}
+
+{{ header_font | font_face }}
+{{ base_font | font_face }}
+{{ horizontal_sale_font | font_face }}
 /* #mobile-menu .menu > li.dropdown a{
   color: white;
   font-size: 1.2rem;
@@ -15,62 +23,70 @@
   } */
 /* small phones */
 /* body {
-    background-color: purple;
-  } *///
+    background-color: purple;///esd
+  } */
 * {
 	box-sizing: border-box;
 }
 html {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: {{ base_font.family }}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	background: #f4f7fd;
 	overflow: hidden;
 	width: 100vw;
 	overflow-y: scroll;
 }
 body {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: {{ base_font.family }}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	background: #f4f7fd;
 	overflow: hidden;
 	width: 100vw;
 	overflow-y: scroll;
 }
 h1 {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: {{header_font.family}}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-weight: {{header_font.weight}};
 	margin: 0;
 	line-height: 1;
+	color: {{settings.color_text}};
 }
-h2 {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+ h2 {
+	font-family: {{header_font.family}}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	margin: 0;
 	line-height: 1;
+	color: {{settings.color_text}};
 }
 h3 {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: {{header_font.family}}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	margin: 0;
 	line-height: 1;
+	color: {{settings.color_text}};
 }
 h4 {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: {{header_font.family}}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	margin: 0;
 	line-height: 1;
+	color: {{settings.color_text}};
 }
 h5 {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: {{header_font.family}}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	margin: 0;
 	line-height: 1;
+	color: {{settings.color_text}};
 }
 h6 {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: {{header_font.family}}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	margin: 0;
 	line-height: 1;
+	color: {{settings.color_text}};
 }
 p {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: {{ base_font.family }}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	margin: 0;
 	line-height: 1;
+	color: {{settings.color_body_text}}
 }
 span {
-	font-family: "Avenir Next Condensed", "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-family: {{ base_font.family }}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	margin: 0;
 	line-height: 1;
 }
@@ -88,7 +104,7 @@ header {
 			font-weight: 600;
 			font-size: 2rem;
 			text-decoration: none;
-			color: white;
+			color: {{settings.header_logo_color}};
 			text-transform: uppercase;
 			display: block;
 		}
@@ -103,7 +119,7 @@ header {
 			display: inline-block;
 			font-weight: 400;
 			text-decoration: none;
-			color: white;
+			color: {{settings.header_menu_links}};
 			text-transform: uppercase;
 		}
 		.link {
@@ -129,7 +145,7 @@ header {
 				}
 				display: none;
 				position: absolute;
-				transform: translate3d(0, 10px, 0);
+				transform: translate3d(0, 10px,0);
 				background: white;
 				color: red;
 				min-width: 150px;
@@ -148,7 +164,7 @@ header {
 		}
 		.open-mobile-menu {
 			display: block;
-			color: white;
+			color: {{settings.header_menu_links}};
 			display: block;
 			height: 50px;
 			width: 50px;
@@ -187,7 +203,7 @@ header {
 		transform: scale(1.5);
 	}
 	.transparent-color {
-		background: rgba(66, 53, 88, 0.8);
+		background: rgba(66,53,88, .8);
 		height: 100vh;
 		width: 100%;
 		position: absolute;
@@ -203,17 +219,17 @@ header {
 		justify-content: center;
 		h1 {
 			font-size: 7rem;
-			color: #ffff00;
+			color: {{settings.highlight_color}};
 			font-weight: 900;
 			text-transform: uppercase;
-			transform: translate3d(100px, 0, 0);
+			transform: translate3d(100px, 0,0);
 		}
 		h2 {
 			font-size: 5rem;
 			color: white;
 			font-weight: 200;
 			text-transform: uppercase;
-			transform: translate3d(135px, 0, 0);
+			transform: translate3d(135px, 0,0);
 		}
 	}
 	.state {
@@ -249,11 +265,8 @@ header {
 			object-fit: cover;
 			cursor: pointer;
 			filter: saturate(0);
-			transition: all 0.4s ease-in-out;
+			transition: all .4s ease-in-out;
 			&:hover {
-				height: 100%;
-				object-fit: cover;
-				cursor: pointer;
 				filter: saturate(100%);
 			}
 		}
@@ -269,6 +282,7 @@ header {
 			.overlay {
 				position: absolute;
 				width: 100%;
+				opacity: .5;
 				height: 100%;
 			}
 			img {
@@ -293,7 +307,7 @@ header {
 			text-transform: uppercase;
 			span {
 				line-height: 1;
-				transform: translate3d(-25px, 50px, 0);
+				transform: translate3d(-25px, 50px,0);
 			}
 		}
 	}
@@ -330,18 +344,20 @@ header {
 	.overlay {
 		height: 100%;
 		width: 100%;
-		background: rgba(0, 0, 0, 0.5);
+		background: rgba(0,0,0, .5);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		.percent-number {
+			font-family: {{ horizontal_sale_font.family }}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 			color: white;
 			font-size: 20rem;
 			font-weight: 900;
 			line-height: 1;
 		}
 		.title {
+			font-family: {{ horizontal_sale_font.family }}, 'Avenir Next Condensed', 'Source Sans Pro', Arial, Helvetica, sans-serif;
 			color: white;
 			font-size: 3rem;
 			font-weight: 900;
@@ -358,10 +374,10 @@ header {
 			border: 2px solid white;
 			text-transform: uppercase;
 			text-decoration: none;
-			transition: all 0.3s ease-in-out;
+			transition: all .3s ease-in-out;
 			&:hover {
 				color: black;
-				background: #ffff00;
+				background: {{settings.highlight_color}};
 			}
 		}
 	}
@@ -400,10 +416,10 @@ header {
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
-			transition: all 0.2s ease-in-out;
+			transition: all .2s ease-in-out;
 			opacity: 0;
 			cursor: pointer;
-			color: #ffff00;
+			color: {{settings.highlight_color}};
 			&:hover {
 				opacity: 1;
 			}
@@ -424,7 +440,7 @@ footer {
 	overflow: hidden;
 	.footer-menu {
 		.menu-title {
-			color: #ffff00;
+			color: {{settings.highlight_color}};
 			font-size: 1.2rem;
 			text-transform: uppercase;
 			margin-bottom: 10px;
@@ -435,7 +451,7 @@ footer {
 		}
 	}
 	.social-title {
-		color: #ffff00;
+		color: {{settings.highlight_color}};
 		font-size: 1.2rem;
 		text-transform: uppercase;
 		margin-bottom: 10px;
@@ -457,9 +473,9 @@ footer {
 			font-size: 1.2rem;
 			text-decoration: none;
 			color: black;
-			transition: all 0.3s ease-in-out;
+			transition: all .3s ease-in-out;
 			&:hover {
-				color: #ffff00;
+				color: {{settings.highlight_color}};
 				background: black;
 			}
 		}
@@ -476,7 +492,7 @@ footer {
 	padding-bottom: 100px;
 }
 #mobile-menu {
-	background: black;
+	background: {{settings.header_bg_color}};
 	height: 100vh;
 	width: 100vw;
 	position: fixed;
@@ -485,13 +501,13 @@ footer {
 	z-index: 20;
 	padding: 20px;
 	display: none;
-	transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0,0);
 	.logo {
 		font-size: 2rem;
 		text-align: center;
 		position: relative;
 		a {
-			color: white;
+			color: {{settings.header_logo_color}};
 			text-transform: uppercase;
 		}
 	}
@@ -501,7 +517,7 @@ footer {
 		}
 		>li {
 			>a {
-				color: #ffff00;
+				color: {{settings.header_menu_links}};
 				font-size: 1.2rem;
 				display: block;
 				margin-bottom: 15px;
@@ -512,7 +528,7 @@ footer {
 		>li.dropdown {
 			.sub-menu {
 				a {
-					color: white;
+					color: {{settings.header_menu_links}};
 					font-size: 1.2rem;
 					display: inline-block;
 					border-bottom: none;
@@ -532,7 +548,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	font-size: 2rem;
-	color: white;
+	color: {{settings.header_menu_links}};
 	position: absolute;
 	right: 0;
 	top: -5px;
